@@ -1,8 +1,9 @@
 <template>
   <div id="app">
-    <nav>
+    <div class="wrapper container-fluid">
+      <nav>
       <div class="navbar navbar-light nvb">
-        <div class="mr-auto">
+        <div class="mr-auto menu">
           <router-link to="/"><img src="@/assets/logo1.png" alt=""></router-link>
           <router-link to="/">Услуги и цены</router-link>
           <router-link to="/">Акции и скидки</router-link>
@@ -13,16 +14,22 @@
           <router-link to="/">Бронь</router-link>
           <router-link to="/">Контакты</router-link>
         </div>
-        <a class="btn-floating btn-lg btn-fb bg-border" href="/"><i class="fa fa-facebook-f"></i></a>
-        <!--Twitter-->
-        <a class="btn-floating btn-lg btn-in bg-border" href="/"><i class="fa fa-instagram"></i></a>
-        <!--Google +-->
-        <a class="btn-floating btn-lg btn-tg bg-border" href="/"><i class="fa fa-telegram"></i></a>
-        <button class="btn">Войти</button>
+        <div class="icons">
+        <a class="btn" href="/">
+          <i class="fab fa-facebook-f"></i>        
+        </a>
+        <a class="btn" href="/">
+          <i class="fab fa-instagram"></i>        
+        </a>
+        <a class="btn" href="/">
+          <i class="fab fa-telegram-plane"></i>        
+        </a>
+      </div>
+        <button class="btn submit">Войти</button>
       </div>
     </nav>
 
-    <section class="body-main">
+    <section class="body1">
       <div class="body-reserve">
         <img src="@/assets/logotip2.png" class="mx-auto d-block" alt="">
         <img src="@/assets/Coworking.png" class="mx-auto d-block" alt="">
@@ -36,7 +43,7 @@
         </div>
       </div>
       <!-- BODY2 -->
-      <div class="body-about row">
+      <div class="body2 row">
         <div class="col-7">
           <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -85,15 +92,15 @@
         </div>
         </div>
       </div>
-      <!-- BODY4 -->
-      <div class="body-coworking-center row align-items-center">
-        <div>
+      <!-- BODY3 -->
+      <div class="body3 row align-items-center">
+        <div class="col-3">
           <img src="./assets/left-stool.png" alt="">
         </div>
-        <div class="container">
+        <div class="container col-6">
           <img src="./assets/shape.png" class="mx-auto d-block" alt="">
           <h1>Основные преимущества нашего <br> Коворкинг-центра</h1>
-          <div class="row content">
+          <div class="row content col-12">
             <div class="div1 row">
               <div class="col-4">
                 <img src="./assets/item1.png" alt="">
@@ -125,18 +132,96 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="col">
             <img src="./assets/right-stool.png" alt="">
         </div>
       </div>
-      <div class="body-iwork">
-
+      <!-- BODY4 -->
+      <div class="body4">
+        <h1><span>iWORK</span>— поможет Вам <br>
+найти нужных людей</h1>
       </div>
-      <div class="body-tarif-plan">
-
+      <!-- BODY5 -->
+      <div class="body5">
+        <img src="@/assets/shape.png" alt="">
+        <div class="body5-title">
+          <h2>Тарифные планы</h2>
+        </div>
+        <div class="row">
+          <div class="col-3"></div>
+          <!-- Cards row -->
+          <div class="col row">
+            <!-- 1-card  -->
+            <div class="col cards">
+              <div class="card-title">
+                <h3>Гибкий график</h3>
+              </div>
+              <div class="card-price">
+               <h5>120 000 сум / месяц</h5>
+              </div>
+              <div class="card-body">
+                <p>1 день / мес включено</p>
+                <p>1 ч / мес Конференц-залы</p>
+                <p>Высокоскоростной интернет</p>
+                <p>Доступ к профессиональной сети</p>
+                <p>Кухня, бесплатный кофе</p>
+                <p>—</p>
+                <p>—</p>
+                <p>—</p>
+              </div>
+              <div>
+                <a class="btn-main" href="/">Купить</a>
+              </div>
+            </div>
+            <!-- 2-card -->
+            <div class="col cards">
+              <div class="card-title">
+                <h3>Неполная занятость</h3>
+              </div>
+              <div class="card-price">
+               <h5>500 000 сум / месяц</h5>
+              </div>
+              <div class="card-body">
+                <p>3 день / мес включено</p>
+                <p>2 ч / мес конференц-залы</p>
+                <p>Высокоскоростной интернет</p>
+                <p>Доступ к профессиональной сети</p>
+                <p>Кухня, бесплатный кофе</p>
+                <p>Семинары / Лекции</p>
+                <p>Менеджеры сообщества</p>
+                <p>—</p>
+              </div>
+              <div>
+                <a class="btn-main" href="/">Купить</a>
+              </div>
+            </div>
+            <!-- 3-card -->
+            <div class="col cards">
+              <div class="card-title">
+                <h3>Гибкий график</h3>
+              </div>
+              <div class="card-price">
+               <h5>120 000 сум / месяц</h5>
+              </div>
+              <div class="card-body">
+                <p>Неограниченное количество рабочих часов</p>
+                <p>Неограниченное количество конференц-залов</p>
+                <p>Высокоскоростной интернет</p>
+                <p>Доступ к профессиональной сети</p>
+                <p>Кухня, бесплатный кофе</p>
+                <p>Семинары / Лекции</p>
+                <p>Прием гостей</p>
+              </div>
+              <div>
+                <a class="btn-main" href="/">Купить</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3"></div>
+        </div>
       </div>
       <div class="body-map">
-
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.1745739777757!2d69.26251651572525!3d41.30506570905678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b201748770b%3A0x1d6fab843c00d089!2sAstronaut+Dzhanibekov+Monument%2C+Afrosiab+Street%2C+Tashkent%2C+Uzbekistan!5e0!3m2!1sen!2s!4v1561639918779!5m2!1sen!2s" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
     </section>
@@ -145,11 +230,15 @@
     <footer>
       <img src="@/assets/logotip.png" alt="" class="mx-auto d-block">
       <div class="icons">
-        <a class="btn-floating btn-lg btn-fb bg-border" href="/"><i class="fa fa-facebook-f"></i></a>
-        <!--Twitter-->
-        <a class="btn-floating btn-lg btn-in bg-border" href="/"><i class="fa fa-instagram"></i></a>
-        <!--Google +-->
-        <a class="btn-floating btn-lg btn-tg bg-border" href="/"><i class="fa fa-telegram"></i></a>
+        <a class="btn" href="/">
+          <i class="fab fa-facebook-f"></i>        
+        </a>
+        <a class="btn" href="/">
+          <i class="fab fa-instagram"></i>        
+        </a>
+        <a class="btn" href="/">
+          <i class="fab fa-telegram-plane"></i>        
+        </a>
       </div>
       <div class="author">
         <p>©2016 iWork.uz. Все права защищены
@@ -159,6 +248,8 @@
       </div>
       
     </footer>
+    </div>
+    
   </div>
 </template>
 
@@ -174,49 +265,35 @@ $button_green: #2ebd7f;
 $main-clr: #eab612;
 
 #app {
-  max-width: 1920px;
-  margin: auto;
+  width: 100%;
 }
 .nvb {
   margin: auto;
-  max-width: 1721px;
+  width: 100%;
   background-color: white;
   * {
     text-decoration: none;
     color: black;
     font-size: 16px;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-right: 10px;
   }
   a:hover {
     text-decoration: none;
   }
-  .btn-lg {
-    border-radius: 50%;
-    border: 2px solid;
-    text-align: center;
-    position: relative;
-    font-size: 21px;
-    * {
-      color: white;
-    }
+  .menu, .icons, button, .menu * {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-right: 10px;
   }
-  .bg-border {
-    width: 36px;
-    height: 36px;
-    padding: 0;
+  .icons i {
     color: white;
-    background-color: $main-clr;
-    line-height: 1.3;
   }
-  .btn {
+  .submit {
     border-radius: 999px;
     border: 2px solid $button_green;
     color: $button_green;
     width: 120px;
   }
-  .btn:hover {
+  .submit:hover {
     color: white;
     background-color: $button_green;
     border-color: white;
@@ -224,17 +301,29 @@ $main-clr: #eab612;
 }
 .icons {
   padding: 15px;
-  a {
-    border: 1px solid $main-clr;
+  .btn {
     border-radius: 50%;
-    background-color: $main-clr !important;
-    font-size: 15px;
-    margin-right: 10px;
-    margin-left: auto;
+    background-color: $main-clr;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    i {
+      line-height: 35px;
+      font-size: 20px;
+      transition: 0.2s linear;
+    }
+  }
+  .btn:hover {
+    background-color: white;
+    i {
+      transform: scale(1.3);
+      color: $main-clr;
+    }
   }
 }
 
-.body-main {
+.body1 {
   .body-reserve {
     padding: 30px;
     background-image: url("./assets/body1-bg.png");
@@ -266,12 +355,15 @@ $main-clr: #eab612;
       color: white;
       text-transform: uppercase;
       font-weight: 700;
+      font-size: 25px;
+      padding-right: 30px;
+      padding-left: 30px;
     }
     .btn:hover {
       color: black;
     }
   }
-  .body-about {
+  .body2 {
     text-align: center;
     .body2-img {
       margin-top: 150px;
@@ -298,7 +390,7 @@ $main-clr: #eab612;
       background-color: $button_green;
     }
   }
-  .body-coworking-center {
+  .body3 {
     margin-top: 60px;
     text-align: center;
     h1 {
@@ -322,17 +414,101 @@ $main-clr: #eab612;
     }
   }
 }
+.body4 {
+  background-image: url("./assets/layer.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding: 120px;
+  * {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  span {
+    color:$main-clr;
+    text-transform: none;
+  }
+}
+.body5 {
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  .body5-title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .col .col {
+    padding: 0px;
+    margin: 10px;
+    border: 1px solid;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #e4e4e4;
+    border-radius: 9px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card-title {
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+    background-image: url("./assets/var1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $main-clr;
+    height: 80px;
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+  }
+  .card-price {
+    background-color: $button_green;
+    padding-top: 12px;
+    height: 50px;
+    margin: 0;
+    color: white;
+  }
+  .card-body {
+    height: 350px;
+  }
+}
+.btn-main {
+  border-radius: 28px;
+  background-color: $button_green;
+  padding: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  box-shadow: 0 2px 0 #272727;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.btn-main:hover {
+  color:$button_green;
+  background-color: white;
+  text-decoration: none;
+}
+.body-map {
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
 footer {
   background-image: url("./assets/footer-fone.svg");
   height: 350px;
   text-align: center;
   padding-top: 30px;
+    margin-bottom: 0;
   * {
     text-align: center;
     color: white;
   }
   .author {
     p {
+      margin-bottom: 0px;
       span {
         color: $main-clr;
       }
